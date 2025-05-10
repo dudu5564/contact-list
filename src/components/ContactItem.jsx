@@ -1,3 +1,5 @@
+import "./ContactItem.css"
+
 function ContactItem(contacts){
     return <>
     <h2>José</h2>
