@@ -1,15 +1,14 @@
-import "./ContactItem.css"
-
-function ContactItem(contacts){
-    return <>
-    <h2>José</h2>
-    <p>(69) 90088-7766</p>
-    <p>mail@mail.com</p>
-    <div>
-    <button>Editar</button>
-    <button>Deletar</button>
-    </div>
-    </>
+function ContactItem({ name, phone, email }) {
+ return (
+ <div className="contact-card">
+ <h2>{name}</h2>
+ <p> {phone}</p>
+ <p> {email}</p>
+ <div className="button-group">
+ <button>Edit</button>
+ <button className="delete">Delete</button>
+ </div>
+ </div>
+ );
 }
-
 export default ContactItem;
