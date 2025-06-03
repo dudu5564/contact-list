@@ -1,21 +1,54 @@
-* {
-  font-family: Arial, sans-serif;
+/* Estilização geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
 }
 
+/* Container principal do app */
 .container {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  max-width: 600px;
-
-  justify-self: center;
-
+  max-width: 900px;
+  margin: 40px auto;
   padding: 20px;
-  border-radius: 8px;
   background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.container h1{
-  align-self: center;
+/* Título principal */
+.container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Botão principal ("Novo Contato") */
+#Novo\ Contato {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#Novo\ Contato:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  #Novo\ Contato {
+    width: 100%;
+  }
 }
